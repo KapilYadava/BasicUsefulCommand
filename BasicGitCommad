@@ -1,0 +1,50 @@
+Useful Git Command
+
+# Basic Commands:
+
+* git init (initlizing git repository)
+* rm -rf .git (remove git directory)
+
+* git clone <repo url> (clone remote repo to local repo)
+* git clone <repo> <directory>
+
+
+* git add . (adding all untracked files)
+* git add <file-name> (add untracked files by name)
+
+* git commit -m <"your message"> (commit alreday added files)
+* git commit -a -m <"your message"> (add and commit modified files)
+
+* git push -u <remote_name> <local_branch_name> (git push -u origin master -> pushing staged changes to remote repo)
+
+
+* git reset <commit-id> (reset your git directory to a commit)
+
+
+# Git Branch:
+
+* git branch --help 
+* git branch <branch_name> (create new branch)
+* git branch (git branch -l/--list -> list name of all branches)
+* git branch -d <branch_name> (delete a branch)
+* git branch -m <branch> (rename a branch)
+* git checkout <branch_name> (switch to a branch)
+
+
+# Git Remote:
+
+* git remote --help
+* git remote add <remote_name> <remote_repo_url> (add remote to local git repo)
+* git remote add origin <remote_repo_url> 
+* git remote show origin
+* git remote remove origin 
+
+# Git Config:
+
+* git config --global credential.helper store (add user configuration to git repo)
+* git config --global user.name <"your username"> (add username to git config)
+* git config --global user.password <"your password"> (add password to git config)
+* git config -l (list out git configurations)
+* git config --list (list out git configurations)
+* git config --global -l/--list (list out git global config)
+
